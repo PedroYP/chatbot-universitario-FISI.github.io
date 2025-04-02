@@ -1,0 +1,36 @@
+.visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: lightblue;
+}
+
+.malla-title{
+    background-color: lightblue;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.nodo-curso {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s ease; /* Transición suave */
+    font-size: 0.75rem;
+}
+
+.nodo-curso:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.requisitos {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    border-bottom: 2px solid black;
+}

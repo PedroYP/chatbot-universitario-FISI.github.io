@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="visual.css">
+    <link rel="stylesheet" href="menu-bar.css">
+
+
+
+</head>
+<body>
+    <section class="container">
+        <section class="half visual"><h1 class="malla-title" id="malla-title">Malla Acádemica Curricular</h1><div class="half visual" id="visual"></section>
+        <section class="half chatbot">
+            <nav class="chat-header">
+                <h1 class="chatbot-title">FISIBot 🤖</h1>
+                <div class="menu-bar">
+                    <input type="text" class="menu-bar__input" readonly placeholder="Elige tu escuela">
+                    <div class="menu-bar__options">
+                        <div class="menu-bar__ep">Ingeniería de Sistemas</div>
+                        <div class="menu-bar__ep">Ingeniería de Software</div>
+                        <div class="menu-bar__ep">Ciencias de la Computación</div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="chat-container" id="chat-container">
+                <div class="typing-indicator" id="typing-indicator">Chatbot está escribiendo...</div>
+                <div class="message bot-message">¡Hola! Soy tu FISI-asistente universitario 🤖</div>
+                <div class="message bot-message">Antes de comenzar, por favor selecciona tu Escuela Académica Profesional👇</div>
+                <div class="option-list">
+                    <span class="option-message option-message--inicial">Ingeniería de Sistemas</span>
+                    <span class="option-message option-message--inicial">Ingeniería de Software</span>
+                    <span class="option-message option-message--inicial">Ciencias de la Computación</span>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Escribe tu pregunta..." autofocus>
+                <button id="send-button">Enviar</button>
+            </div>
+
+            <div class="help-text">
+                <p><strong>Ejemplos de preguntas:</strong></p>
+                <div class="examples-container">
+                    <span class="example-question" onclick="insertExample('¿Puedo tomar Desarrollo Personal y Liderazgo?')">¿Puedo tomar Desarrollo Personal y Liderazgo?</span>
+                    <span class="example-question" onclick="insertExample('Aprobé Inteligencia Artificial')">Aprobé Inteligencia Artificial</span>
+                    <span class="example-question" onclick="insertExample('¿Qué cursos aprobé?')">¿Qué cursos aprobé?</span>
+                    <span class="example-question" onclick="insertExample('¿Cuál es el horario de Inteligencia Artificial?')">¿Cuál es el horario de Inteligencia Artificial?</span>
+                    <span class="example-question example-question--dinamico" onclick="insertExample('¿Quién enseña Matemática Discreta?')">¿Quién enseña Matemática Discreta?</span>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="base_datos.js"></script>
+    <script src="script.js"></script>
+    <script src="menu-bar.js"></script>
+</body>
+</html>
